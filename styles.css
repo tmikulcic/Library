@@ -5,8 +5,8 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  min-width: 30%;
+  max-width: 40%;
+  min-width: 40%;
   justify-content: center;
   margin: auto;
 }
@@ -15,4 +15,35 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+label,
+input {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#read {
+  width: 2rem;
+  margin: 0;
+}
+
+.btn {
+  margin-top: 2rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  background-color: rgb(70, 154, 70);
+  color: white;
 }
