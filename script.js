@@ -13,12 +13,10 @@ function addBookToLibrary() {
   let author = document.querySelector('#author').value;
   let title = document.querySelector('#title').value;
   let pages = document.querySelector('#pages').value;
-  let read = document.querySelector('#read');
-  console.log(author);
-  console.log(title);
-  console.log(pages);
-  console.log(read.checked);
+  let read = document.querySelector('#read').checked;
+  let newBook = new Book(author, title, pages, read);
 
-  myLibrary.push({ author, title, pages, read });
+  console.log(newBook);
+  myLibrary.push(newBook);
   console.table(myLibrary);
 }
