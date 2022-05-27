@@ -5,8 +5,8 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
-  min-width: 40%;
+  max-width: 50%;
+  min-width: 50%;
   justify-content: center;
   margin: auto;
 }
@@ -57,7 +57,9 @@ input {
 th,
 td {
   border: 2px solid black;
-  width: 11.9rem;
+  width: 14.85rem;
+  max-width: 14.85rem;
   height: 3.5rem;
   font-size: 1.5rem;
+  word-wrap: break-word;
 }
