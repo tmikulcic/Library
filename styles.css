@@ -47,3 +47,17 @@ input {
   background-color: rgb(70, 154, 70);
   color: white;
 }
+
+#table {
+  width: 200rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 2px solid black;
+  width: 11.9rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+}
