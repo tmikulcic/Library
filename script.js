@@ -26,29 +26,26 @@ function addBookToLibrary() {
   myLibrary.push(newBook);
   console.table(myLibrary);
 
-  //Creating table and filling it with data
-  let table = document.createElement('table');
-  let headerRow = document.createElement('tr');
+  //Card creation
+  const contentDiv = document.querySelector('#card');
 
-  headers.forEach((headerText) => {
-    let header = document.createElement('th');
-    let textNode = document.createTextNode(headerText);
-    header.appendChild(textNode);
-    headerRow.appendChild(header);
-  });
+  const cardAuthor = document.createElement('p');
+  cardAuthor.textContent = `Author: ${author}`;
+  cardAuthor.classList.add('card-info');
+  contentDiv.appendChild(cardAuthor);
 
-  table.appendChild(headerRow);
+  const cardName = document.createElement('p');
+  cardName.textContent = `Title: ${title}`;
+  cardName.classList.add('card-info');
+  contentDiv.appendChild(cardName);
 
-  myLibrary.forEach((book) => {
-    let row = document.createElement('tr');
-    Object.values(book).forEach((text) => {
-      let cell = document.createElement('td');
-      let textNode = document.createTextNode(text);
-      cell.appendChild(textNode);
-      row.appendChild(cell);
-    });
-    table.appendChild(row);
-  });
+  const cardPages = document.createElement('p');
+  cardPages.textContent = `Pages: ${pages}`;
+  cardPages.classList.add('card-info');
+  contentDiv.appendChild(cardPages);
 
-  myTable.appendChild(table);
+  const cardRead = document.createElement('p');
+  cardRead.textContent = `Read: ${read}`;
+  cardRead.classList.add('card-info');
+  contentDiv.appendChild(cardRead);
 }
