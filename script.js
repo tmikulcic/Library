@@ -50,7 +50,7 @@ function addBookToLibrary() {
   removeBook.classList.add('rmv-btn');
   removeBook.querySelector('.rmv-btn');
   removeBook.addEventListener('click', (e) => {
-    console.log(e.target);
+    removeBook.parentElement.remove();
   });
 
   const card = document.createElement('div');
