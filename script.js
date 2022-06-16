@@ -48,4 +48,13 @@ function addBookToLibrary() {
   cardRead.textContent = `Read: ${read}`;
   cardRead.classList.add('card-info');
   contentDiv.appendChild(cardRead);
+
+  const removeBook = document.createElement('button');
+  removeBook.textContent = 'Remove';
+  removeBook.classList.add('rmv-btn');
+  contentDiv.appendChild(removeBook);
+  removeBook.querySelector('.rmv-btn');
+  removeBook.addEventListener('click', (e) => {
+    console.log(e.target);
+  });
 }
