@@ -43,7 +43,7 @@ function createCard(book) {
   };
 
   const card = document.createElement('div');
-  card.classList.add('card1');
+  card.classList.add('book-card');
 
   const cardAuthor = createElement('p', `${book.author}`, 'card-info');
   const cardTitle = createElement('p', `${book.title}`, 'card-info');
